@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Student 360">
+        <div class="slds-p-around_medium">
+            <template if:true={contact}>
+                <p><strong>Name:</strong> {contactName}</p>
+                <p><strong>Email:</strong> {contactEmail}</p>
+                <p><strong>Phone:</strong> {contactPhone}</p>
+                <!-- Add more fields or related lists as needed -->
+            </template>
+            <template if:false={contact}>
+                <p>Loading...</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>
